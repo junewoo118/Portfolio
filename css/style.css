@@ -1,0 +1,182 @@
+/* Navigation */
+.nav_bar {
+    background-color: black;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding: 8pt 16pt 8pt 16pt;
+}
+
+.nav_options {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16pt;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+}
+
+.nav_option {
+    color: white;
+    text-decoration: none;
+    margin: 8pt;
+}
+
+.nav_button {
+    color: black;
+    background-color: gold;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16pt;
+    text-decoration: none;
+    padding: 8pt 16pt;
+    margin: 8pt;
+}
+
+.logo {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero_section {
+    display: flex;
+    justify-content: space-around;
+    background-color: gold;
+    padding: 32pt;
+}
+
+.hero_text {
+    font-family: 'Poppins';
+    font-size: 5em;
+}
+
+p {
+    margin: 0;
+}
+
+.hero_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Check out my projects Sign */
+.filler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    font-size: 32pt;
+    padding: 16pt 0pt 16pt 0pt;
+}
+
+.arrow {
+    padding: 16pt;
+}
+
+/* Project List */
+#prjList {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 4em;
+}
+
+h2 {
+    margin: 16pt 0pt 0pt 0pt;
+    font-family: 'Poppins';
+    font-size: 36pt;
+    font-weight: bold;
+}
+
+.prjContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 16pt;
+}
+
+.prj1_left, .prj2_left, .prj3_left {
+    padding: 8pt 32pt;
+}
+
+.prj_subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16pt;
+}
+
+.prj_info {
+    padding: 32pt 32pt;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12pt;
+}
+
+.prj1_left {
+    background-color: #FFAD8A;
+}
+
+.prj2_left {
+    background-color: #4FA270;
+}
+
+.prj3_left {
+    background-color: #6967BC;
+}
+
+.learn_button {
+    background-color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12pt;
+    padding: 8pt 16pt;
+}
+
+.prj_button_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64pt 0pt;
+    background-color: black;
+    color: white;
+}
+
+.footer_msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_slogan {
+    font-family: 'Poppins';
+    font-size: 32pt;
+}
+
+.footer_button {
+    background-color: gold;
+    font-family: 'Poppins';
+    font-size: 16pt;
+    padding: 8pt 16pt;
+    margin: 4pt 0pt 32pt 0pt;
+}
+
+.footer_contactlist {
+    display: flex;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16pt;
+}
+
+.footer_contact {
+    display: flex;
+    align-items: center;
+    padding: 0pt 16pt;
+    color: white;
+    text-decoration: none;
+}
