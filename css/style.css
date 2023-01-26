@@ -4,7 +4,7 @@ body {
 
 /* Navigation */
 .nav_bar {
-    background-color: black;
+    background-color: #535CAA;
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
@@ -29,10 +29,16 @@ body {
     color: black;
     background-color: gold;
     font-family: 'DM Sans', sans-serif;
+    border-radius: 100pt;
     font-size: 16pt;
     text-decoration: none;
     padding: 8pt 16pt;
     margin: 8pt;
+    transition: 0.5s;
+}
+
+.nav_button:hover {
+    background-color: #535CAA;
 }
 
 .logo {
@@ -46,13 +52,28 @@ body {
 .hero_section {
     display: flex;
     justify-content: space-around;
-    background-color: gold;
+    background-color: #535CAA;
+    padding: 32pt;
+    padding-bottom: 6em;
+}
+
+.borderBox {
+    border: 0.5em solid black;
+    display: flex;
+    flex-direction: row;
     padding: 32pt;
 }
 
 .hero_text {
     font-family: 'Poppins';
     font-size: 5em;
+    font-weight: lighter;
+    color: black;
+}
+
+.heroBold {
+    color: gold;
+    font-weight: 800;
 }
 
 p {
@@ -167,7 +188,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 64pt 0pt;
-    background-color: black;
+    background-color: #535CAA;
     color: white;
 }
 
