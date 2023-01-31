@@ -22,13 +22,14 @@
     
 <!--Hero Section-->
         <section class="hero_section">
-        <div class="borderBox">
+        <div class="heroFlex">
+            <div class="hoverIndicator">hover me.</div>
             <div class="hero_text">
-                <p>A <span class="heroBold">UI/UX DESIGNER</span><br>
+                <p>A <span class="heroBold">UX/UI DESIGNER</span><br>
                 that <span class="heroBold">VALUES</span><br>
-                <span class="heroBold">AESTHETICS</span> and<br>
-                <span class="heroBold">PLAYFULNESS</span> with<br>
-               <span class="heroBold">USER NEEDS</span> in mind.</p>
+                <span id="aesthetics" class="heroBold">AESTHETICS</span> and<br>
+                <span id="playfulness" class="heroBold">PLAYFULNESS</span> with<br>
+               <span id="userneeds" class="heroBold">USER NEEDS</span> in mind.</p>
             </div>
             <div class="hero_image">
                 <img src="images/Dino Nug Man.png">
@@ -36,14 +37,7 @@
             </div>
         </div>
         </section>
-        
-<!--Check out my projects Section-->
-        <section class="filler">
-            <img class="arrow" src="images/Down Arrow Nug.png">
-            <p>Check out my Projects</p>
-            <img class="arrow" src="images/Down Arrow Nug.png">
-        </section>
-
+    
 <!--Projects Section-->
         <section id="prjList">
             <div class="prjContainer">
@@ -83,13 +77,16 @@
 
     <!--Footer Section-->
         <footer>
-            <div class="footer_msg">
-                <p class="footer_slogan">Let's Build it Together</p>
-                <button class="footer_button" href="#contact">Get in Touch</button> 
-            </div>
-            <div class="footer_contactlist">
-                <p class="footer_contact">junewoo118@gmail.com</p>
-                <a class="footer_contact" href="#resume"><img src="images/Linkedin White Square.png" width="50" height="50">LinkedIn</a>
+            <div class="footerGrid">
+                <div class="footer_msg">
+                    <p class="footer_slogan">Let's Build it Together</p>
+                    <button class="footer_button" href="#contact">Get in Touch</button> 
+                </div>
+                <div class="footer_email">junewoo118@gmail.com</div>
+                <div class="footer_linkedin">
+                    <a class="footer_contact" href="#contact"><img src="images/Linkedin White Square.png" width="50" height="50">LinkedIn</a>
+                </div>
+                </div>
             </div>
         </footer>
     </body>

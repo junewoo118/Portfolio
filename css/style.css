@@ -1,14 +1,16 @@
 body {
     margin: 0;
+    background-color: whitesmoke;
 }
 
 /* Navigation */
 .nav_bar {
-    background-color: #535CAA;
+    background-color: whitesmoke;
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
     padding: 8pt 16pt 8pt 16pt;
+    border-bottom: 8px solid black;
 }
 
 .nav_options {
@@ -20,14 +22,14 @@ body {
 }
 
 .nav_option {
-    color: white;
+    color: black;
     text-decoration: none;
     margin: 8pt;
 }
 
 .nav_button {
-    color: black;
-    background-color: gold;
+    color: white;
+    background-color: #535CAA;
     font-family: 'DM Sans', sans-serif;
     border-radius: 100pt;
     font-size: 16pt;
@@ -35,14 +37,20 @@ body {
     padding: 8pt 16pt;
     margin: 8pt;
     transition: 0.5s;
+    box-shadow: inset -5px -5px 10px -6px #000000,
+    inset 5px 5px 10px -6px #FFFFFF;
+    border: none;
 }
 
 .nav_button:hover {
-    background-color: #535CAA;
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: inset -5px -5px 10px -6px #000,
+    inset 5px 5px 10px -6px white;
 }
 
 .logo {
-    color: white;
+    color: black;
     font-family: 'Poppins';
     font-size: 36pt;
     text-decoration: none;
@@ -51,29 +59,54 @@ body {
 /* Hero Section */
 .hero_section {
     display: flex;
-    justify-content: space-around;
-    background-color: #535CAA;
+    justify-content: center;
+    background-color: whitesmoke;
     padding: 32pt;
     padding-bottom: 6em;
 }
 
-.borderBox {
-    border: 0.5em solid black;
+.heroFlex {
+    border: 4px solid black;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 32pt;
+}
+
+.hoverIndicator {
+    font-family: 'DM Sans', sans-serif;
+    transform: rotate(-90deg);
 }
 
 .hero_text {
     font-family: 'Poppins';
     font-size: 5em;
-    font-weight: lighter;
+    font-weight: 100;
     color: black;
 }
 
 .heroBold {
-    color: gold;
+    color: black;
     font-weight: 800;
+}
+
+#aesthetics:hover {
+    color: white;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+#playfulness:hover {
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 p {
@@ -86,20 +119,6 @@ p {
     justify-content: flex-end;
 }
 
-/* Check out my projects Sign */
-.filler {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins';
-    font-size: 32pt;
-    padding: 16pt 0pt 16pt 0pt;
-}
-
-.arrow {
-    padding: 16pt;
-}
-
 /* Project List */
 #prjList {
     display: flex;
@@ -108,7 +127,8 @@ p {
     justify-content: center;
     margin: auto;
     margin-bottom: 4em;
-    max-width: 1200px;
+    width: 1200px;
+    background-color: whitesmoke;
 }
 
 h2 {
@@ -121,8 +141,8 @@ h2 {
 .prjContainer {
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: auto;
-    margin-bottom: 16pt;
+    margin-top: 16pt;
+    width: 1200px;
     border: 4px solid black;
 }
 
@@ -166,6 +186,15 @@ h2 {
     padding: 8px 16px;
     margin-bottom: 32px;
     cursor: pointer;
+    border-radius: 100pt;
+    box-shadow: inset -5px -5px 10px -6px #000000,
+    inset 5px 5px 10px -6px #FFFFFF;
+    border: none;
+}
+
+.learn_button:hover {
+    background-color: black;
+    color: white;
 }
 
 .prjRight {
@@ -189,13 +218,29 @@ footer {
     align-items: center;
     padding: 64pt 0pt;
     background-color: #535CAA;
-    color: white;
+    color: black;
+}
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "footer_msg footer_email"
+    "footer_msg footer_linkedin"
+    ;
+    width: 1200px;
+    border: 4pt solid black;
 }
 
 .footer_msg {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    background-color: #535CAA;
+    border: 1pt solid red;
 }
 
 .footer_slogan {
@@ -204,25 +249,50 @@ footer {
 }
 
 .footer_button {
-    background-color: gold;
+    background-color: white;
     font-family: 'Poppins';
     font-size: 16pt;
     padding: 8pt 16pt;
     margin: 4pt 0pt 32pt 0pt;
     cursor: pointer;
+    border-radius: 100pt;
+    box-shadow: inset -5px -5px 10px -6px #000000,
+    inset 5px 5px 10px -6px #FFFFFF;
+    border: none;
 }
 
-.footer_contactlist {
-    display: flex;
-    align-items: center;
+.footer_email{
     font-family: 'DM Sans', sans-serif;
     font-size: 16pt;
-}
-
-.footer_contact {
     display: flex;
     align-items: center;
     padding: 0pt 16pt;
-    color: white;
+    color: black;
+    text-align: right;
+    border: 1pt solid red;
+}
+
+.footer_linkedin {
+    background-color: #535CAA;
+    text-align: right;
+    border: 1pt solid red;
+
+}
+
+.footer_contact {
+    background-color: #535CAA;
     text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16pt;
+    color: black;
+}
+
+/*Mobile Query*/
+
+@media only screen and (max-width: 600) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
 }

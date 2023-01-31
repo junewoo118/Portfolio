@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../18.2-activities/unsolved"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "June-WooP",
+		"liveServer.settings.port": 5501
+	}
+}
